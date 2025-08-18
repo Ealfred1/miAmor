@@ -1,50 +1,98 @@
-# Welcome to your Expo app 👋
+# MiAmor - Find Love, Earn Income 💙
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful, modern mobile app showcasing the MiAmor platform - an online initiative that allows you to make massive income while getting matched with someone who can be your life partner.
 
-## Get started
+## Features
 
-1. Install dependencies
+### MiAmor Ultra Framework
+- **Access Fee**: N14,000
+- **Onboarding Gift**: N12,500
+- **Connection Commission**: N12,500
+- **1st Level Spillover**: N400
+- **2nd Level Spillover**: N150
+- **Game Modules**: N5,000 daily
+- **Matching Add-ons**: N2,500 daily
+- **Open Love Hamper**: N10,000
+- **TikTok/FB Share**: N2,500 per 5,000 views
+- **Love Partner Matches**: 5 per week
 
+### MiAmor Plus Framework
+- **Access Fee**: N10,000
+- **Onboarding Gift**: N8,000
+- **Connection Commission**: N9,100
+- **1st Level Spillover**: N200
+- **2nd Level Spillover**: N100
+- **Game Modules**: N3,000 daily
+- **Matching Add-ons**: N2,000 daily
+- **Open Love Hamper**: N5,000
+- **TikTok/FB Share**: N2,500 per 5,000 views
+- **Love Partner Matches**: 2 per week
+
+### Outstanding Additions (Both Frameworks)
+- ✅ Incentives: Fully Deployed
+- ✅ Couples Challenge: Fully Deployed
+- ✅ Skills Lab: Fully Deployed
+- ✅ Couples Trip: Fully Deployed
+- ✅ Love Hamper: Fully Deployed
+- ✅ Sell It Sector: Fully Deployed
+- ✅ Marathon Contest: Fully Deployed
+- ✅ Automated Withdrawals: Fully Deployed
+
+## Design Features
+
+- **Modern UI/UX**: Sleek, futuristic design with proper color hierarchy
+- **Dark Theme**: Beautiful dark gradient backgrounds
+- **Responsive Layout**: Optimized for all screen sizes
+- **Interactive Elements**: Smooth animations and touch feedback
+- **Professional Typography**: Clear text hierarchy and readability
+- **Icon Integration**: Meaningful icons for better user understanding
+
+## Technology Stack
+
+- **React Native** with Expo
+- **TypeScript** for type safety
+- **Expo Linear Gradient** for beautiful backgrounds
+- **Ionicons** for consistent iconography
+- **Expo Router** for navigation
+
+## Getting Started
+
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. Start the development server:
    ```bash
-   npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+3. Run on your preferred platform:
+   ```bash
+   # iOS
+   npm run ios
+   
+   # Android
+   npm run android
+   
+   # Web
+   npm run web
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Contact
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+For more information about MiAmor, contact the official team:
+- **Telegram**: [MiAmor Official](https://t.me/m/k3I7eDZgNWZk)
 
-## Get a fresh project
+## Screenshots
 
-When you're ready, run:
+The app features a beautiful single-page design with:
+- Elegant logo with the signature yellow dot
+- Two main framework cards (Ultra & Plus)
+- Detailed earnings breakdown
+- Feature deployment status
+- Direct contact button
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built with ❤️ for the MiAmor community
