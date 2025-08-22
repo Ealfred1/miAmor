@@ -3,6 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import {
   Dimensions,
+  Image,
   ImageBackground,
   Linking,
   ScrollView,
@@ -74,36 +75,38 @@ export default function MiAmorApp() {
   );
 
   const ultraData = [
-    { title: 'Access Fee', value: '14,000', icon: 'card' },
-    { title: 'Onboarding gift', value: '12,500', icon: 'gift' },
-    { title: 'Connection commission', value: '12,500', icon: 'link' },
-    { title: 'First level spill', value: '400', icon: 'trending-up' },
-    { title: 'Second level spill', value: '150', icon: 'trending-up' },
-    { title: 'Game modules', value: '5000', icon: 'game-controller' },
-    { title: 'Matching Add ons', value: '2500', icon: 'heart' },
-    { title: 'Open Love hamper', value: '10,000', icon: 'gift-outline' },
-    { title: 'TikTok/fb lovers share', value: '2500/5kViews', icon: 'share-social' },
+    { title: 'Access Fee/Signup Fee', value: '₦14,000', icon: 'card' },
+    { title: 'Onboarding Gift', value: '₦12,500', icon: 'gift' },
+    { title: 'Connection Commission/REF', value: '₦12,500', icon: 'link' },
+    { title: '1st Level Spillover', value: '₦400', icon: 'trending-up' },
+    { title: '2nd Level Spillover', value: '₦150', icon: 'trending-up' },
+    { title: 'Game modules', value: '₦5,000 daily', icon: 'game-controller' },
+    { title: 'Matching ads-on', value: '₦2,500 daily', icon: 'heart' },
+    { title: 'Open love hamper', value: '₦10,000', icon: 'gift-outline' },
+    { title: 'TikTok/fb lovers share', value: '₦2,500 per 5k views', icon: 'share-social' },
   ];
 
   const plusData = [
-    { title: 'Access Fee', value: '10,000', icon: 'card' },
-    { title: 'Onboarding gift', value: '8000', icon: 'gift' },
-    { title: 'Connection commission', value: '9100', icon: 'link' },
-    { title: 'First level spill', value: '200', icon: 'trending-up' },
-    { title: 'Second level spill', value: '100', icon: 'trending-up' },
-    { title: 'Game modules', value: '3000', icon: 'game-controller' },
-    { title: 'Matching Add ons', value: '2000', icon: 'heart' },
-    { title: 'Open Love hamper', value: '5000', icon: 'gift-outline' },
-    { title: 'TikTok/fb lovers share', value: '1500/5kViews', icon: 'share-social' },
+    { title: 'Access Fee/Signup Fee', value: '₦10,000', icon: 'card' },
+    { title: 'Onboarding Gift', value: '₦8,000', icon: 'gift' },
+    { title: 'Connection Commission/REF', value: '₦9,100', icon: 'link' },
+    { title: '1st Level Spillover', value: '₦200', icon: 'trending-up' },
+    { title: '2nd Level Spillover', value: '₦100', icon: 'trending-up' },
+    { title: 'Game modules', value: '₦3,000 daily', icon: 'game-controller' },
+    { title: 'Matching ads-on', value: '₦2,000 daily', icon: 'heart' },
+    { title: 'Open love hamper', value: '₦5,000', icon: 'gift-outline' },
+    { title: 'TikTok/fb lovers share', value: '₦2,500 per 5k views', icon: 'share-social' },
   ];
 
   const features = [
-    { title: 'INCENTIVES', status: 'DEPLOYED' },
-    { title: 'MARATHON CONTEST', status: 'DEPLOYED' },
-    { title: 'COUPLES CHALLENGE', status: 'DEPLOYED' },
-    { title: 'SKILLS LAB', status: 'DEPLOYED' },
-    { title: 'COUPLES TRIP', status: 'DEPLOYED' },
-    { title: 'LOVE HAMPER', status: 'DEPLOYED' },
+    { title: 'INCENTIVES', status: 'FULLY DEPLOYED' },
+    { title: 'MARATHON CONTEST', status: 'FULLY DEPLOYED' },
+    { title: 'COUPLES CHALLENGE', status: 'FULLY DEPLOYED' },
+    { title: 'SKILLS LAB', status: 'FULLY DEPLOYED' },
+    { title: 'COUPLES TRIP', status: 'FULLY DEPLOYED' },
+    { title: 'LOVE HAMPER', status: 'FULLY DEPLOYED' },
+    { title: 'SELL IT SECTOR', status: 'FULLY DEPLOYED' },
+    { title: 'AUTOMATED WITHDRAWALS', status: 'FULLY DEPLOYED' },
   ];
 
   return (
@@ -127,9 +130,11 @@ export default function MiAmorApp() {
             {/* Header */}
             <View style={styles.header}>
               <View style={styles.logoContainer}>
-                <Text style={styles.logoText}>mi</Text>
-                <View style={styles.logoDot} />
-                <Text style={styles.logoText}>Amor</Text>
+                <Image 
+                  source={require('../assets/images/miamor.jpg')}
+                  style={styles.logoImage}
+                  resizeMode="contain"
+                />
               </View>
               <Text style={styles.tagline}>Find Love, Earn Income</Text>
             </View>
@@ -139,6 +144,15 @@ export default function MiAmorApp() {
               <View style={styles.sectionHeader}>
                 <Text style={styles.sectionTitle}>Earnings Framework</Text>
                 <Text style={[styles.sectionSubtitle, { color: '#4ecdc4' }]}>MiAmor Ultra</Text>
+              </View>
+              
+              <View style={styles.descriptionContainer}>
+                <Text style={styles.descriptionText}>
+                  ✅Miamor is an online initiatives that allows you make massive income while getting matched with someone who can be your life partner.
+                </Text>
+                <Text style={styles.descriptionText}>
+                  ✅Whether you&apos;re seeking for a new love or looking to save your relationship, Miamor is the one for you
+                </Text>
               </View>
 
               <View style={styles.earningsGrid}>
@@ -155,7 +169,7 @@ export default function MiAmorApp() {
 
               <View style={styles.matchesInfo}>
                 <Text style={[styles.matchesText, { color: '#4ecdc4' }]}>
-                  NUMBER OF MATCHES MORE THAN 5 PER WEEK
+                  NUMBER OF LOVE PARTNER MATCHES: 5 PER WEEK ✅
                 </Text>
               </View>
 
@@ -177,6 +191,15 @@ export default function MiAmorApp() {
                 <Text style={styles.sectionTitle}>Earnings Framework</Text>
                 <Text style={[styles.sectionSubtitle, { color: '#ff6b6b' }]}>MiAmor Plus</Text>
               </View>
+              
+              <View style={styles.descriptionContainer}>
+                <Text style={styles.descriptionText}>
+                  ✅Miamor is an online initiatives that allows you make massive income while getting matched with someone who can be your life partner.
+                </Text>
+                <Text style={styles.descriptionText}>
+                  ✅Whether you&apos;re seeking for a new love or looking to save your relationship, Miamor is the one for you
+                </Text>
+              </View>
 
               <View style={styles.earningsGrid}>
                 {plusData.map((item, index) => (
@@ -192,7 +215,7 @@ export default function MiAmorApp() {
 
               <View style={styles.matchesInfo}>
                 <Text style={[styles.matchesText, { color: '#ff6b6b' }]}>
-                  NUMBER OF MATCHES MORE THAN 2 PER WEEK
+                  NUMBER OF LOVE PARTNER MATCHES: 2 PER WEEK ✅
                 </Text>
               </View>
 
@@ -251,22 +274,15 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   logoContainer: {
-    flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 15,
+    borderRadius: 50,
   },
-  logoText: {
-    fontSize: 36,
-    fontWeight: 'bold',
-    color: '#4ecdc4',
-    letterSpacing: 2,
-  },
-  logoDot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    backgroundColor: '#ffd93d',
-    marginHorizontal: 3,
+  logoImage: {
+    width: 150,
+    height: 75,
+    marginBottom: 10,
+    borderRadius: 37.5,
   },
   tagline: {
     fontSize: 18,
@@ -292,6 +308,22 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     letterSpacing: 1,
+  },
+  descriptionContainer: {
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    borderRadius: 12,
+    marginBottom: 25,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
+  },
+  descriptionText: {
+    fontSize: 16,
+    color: '#ffffff',
+    lineHeight: 20,
+    marginBottom: 8,
+    textAlign: 'center',
   },
   earningsGrid: {
     flexDirection: 'row',
